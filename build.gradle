@@ -8,6 +8,15 @@
 
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '4.0.1'
+}
+
+shadowJar {
+    zip64 true
+    archiveBaseName.set('myselproj')
+    manifest {
+        attributes 'Main-Class': 'entrypoint.Main'
+    }
 }
 
 repositories {
