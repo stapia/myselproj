@@ -34,7 +34,7 @@ tasks.named('test') {
         useDefaultListeners = true
 
         //set TestNG output dir
-        outputDirectory = file("$projectDir/testngOutput")
+        outputDirectory = file("$projectDir/build/testngOutput")
 
         // show standard out and standard error of the test JVM(s) on the console
         //testLogging.showStandardStreams = true
